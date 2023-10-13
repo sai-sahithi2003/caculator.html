@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightblue; /* Change the background color to lightblue */
+    border-radius: 25%;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 2fr repeat(5, 1fr);
+}
+
+.item {
+    color: navy; /* Change the text color to navy */
+    font-size: 20px;
+    background: #FFD700; /* Change the background color to gold */
+    text-align: center;
+    padding: 10px;
+    transition: 0.15s;
+    user-select: none;
+}
+
+.item:active {
+    background-color: #FF6347; /* Change the background color to tomato */
+    color: #fff;
+    border-bottom-left-radius: 25px;
+}
+
+.item1 {
+    font-size: 35px;
+    background: #E6E6FA; /* Change the background color to lavender */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+.item2 {
+    font-size: 25px;
+    text-align: end;
+    background: #90EE90; /* Change the background color to lightgreen */
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.item3 {
+    color: #FF0000; /* Change the text color to red */
+    font-weight: bold;
+}
+
+.symbol {
+    width: 30%;
+    padding: 10px;
+    border-radius: 25%;
+    background: #F5F5F5; /* Change the background color to white smoke */
+}
+
+#error-text {
+    color: #F16161; /* Change the text color to a shade of red */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
